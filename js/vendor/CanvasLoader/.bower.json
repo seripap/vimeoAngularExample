@@ -1,0 +1,14 @@
+{
+  "name": "CanvasLoader",
+  "homepage": "https://github.com/heartcode/CanvasLoader",
+  "version": "0.9.1",
+  "_release": "0.9.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.9.1",
+    "commit": "7d56e1db0ff5c5e42ae4323d6931f39ec250e2fd"
+  },
+  "_source": "git://github.com/heartcode/CanvasLoader.git",
+  "_target": "*",
+  "_originalSource": "CanvasLoader"
+}
