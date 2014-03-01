@@ -1,0 +1,30 @@
+@import "normalize";
+
+.contained {
+	margin: 0 auto;
+	width: 980px;
+}
+
+.videoPlayer {
+	text-align: center
+}
+
+.videoCollection li {
+	display: inline-block;
+	margin: 0.5em;
+	cursor: pointer;
+}
+
+.videoCollection figcaption {
+	font-size: 0.8em;
+}
+
+.videoCollection figure {
+	margin: 0;
+	opacity: 0.7;
+}
+
+
+.videoCollection figure:hover, .videoCollection .nowPlaying {
+	opacity: 1;
+}

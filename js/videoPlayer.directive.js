@@ -1,0 +1,3 @@
+/*! vimeoExample
+ @modified Saturday, March 1st, 2014, 2:49:51 AM */
+vimeoApp.directive("vimeoPlayer",function($rootScope,$document,$compile){var vimeoPlayer={_template:function(videoId,width,height){return'<iframe src="//player.vimeo.com/video/'+videoId+'" width="'+width+'" height="'+height+'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'},initalize:function(videoId,width,height){var width=640,height=360;return this._template(videoId,width,height)}};return function(scope,element){scope.$on("videoCollectionChanged",function(event,data){var template=vimeoPlayer.initalize(data.id,data.width,data.height);element.empty().append($compile(template)(scope))})}});

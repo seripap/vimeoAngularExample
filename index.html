@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Vimeo API example with</title>
+	<link rel="stylesheet" href="css/vimeo.css">
+</head>
+<body class="contained" ng-app="vimeoApp">
+
+<section id="player" class="videoPlayer">
+	<h1>AngularJS Vimeo Collection and Player Change Example</h1>
+	<div vimeo-player></div>
+	<article ng-controller="videoMetadataController" ng-show="metadata">
+	<h3>{{ metadata.title }}</h3>
+	<p>Uploaded on {{ metadata.upload_date }}</p>
+	<p ng-bind-html="safeHtml(metadata.description)"></p>
+	</article>
+</section>
+
+
+<section class="videoCollection" ng-controller="videoPlayerCollectionController">
+<ul>
+	<li ng-repeat="item in videoData" ng-click="changeVideo(item)" id="{{item.id}}" smooth-scroll target="player">
+		<figure ng-class="{nowPlaying: nowPlaying === item.id}"><img ng-src="{{item.thumbnail_medium}}"></figure>
+	</li>
+</ul>
+
+</section>
+
+<script src="js/vendor/angular/angular.min.js"></script>
+<script src="js/vendor/angular-smoothscroll/dist/scripts/c8742280.scripts.js"></script>
+<script src="js/vimeoExample.js"></script>
+</body>
+</html>

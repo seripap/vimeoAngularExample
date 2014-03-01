@@ -1,0 +1,20 @@
+{
+  "name": "vimeoExample",
+  "version": "1.0.0",
+  "main": "index.html",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "modernizr": "latest",
+    "angular": "1.2.12",
+    "jquery": "latest",
+    "angular-touch": "latest",
+    "angular-smoothscroll": "latest",
+    "CanvasLoader": "latest"
+  },
+  "resolutions": {
+    "angular": "1.2.12"
+  }
+}
