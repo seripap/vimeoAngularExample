@@ -24,6 +24,12 @@
 	opacity: 0.7;
 }
 
+.videoCollection img {
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+	border: 1px solid #CCC;
+}
 
 .videoCollection figure:hover, .videoCollection .nowPlaying {
 	opacity: 1;
