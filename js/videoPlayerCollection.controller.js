@@ -1,3 +1,3 @@
 /*! vimeoExample
- @modified Saturday, March 1st, 2014, 8:41:13 AM */
+ @modified Saturday, March 1st, 2014, 12:22:16 PM */
 vimeoApp.controller("videoPlayerCollectionController",function($rootScope,$scope,$http){$scope.getData=function(){var url="http://vimeo.com/api/v2/channel/staffpicks/videos.json",promise=$http.get(url);promise.then(function(response){$scope.videoData=response.data,response.data[0]&&$scope.changeVideo(response.data[0])}),promise.catch(function(msg){console.error(msg),alert("There was an error with the vimeo api. Please try again later.")})},$scope.changeVideo=function(data){$scope.nowPlaying=data.id,$rootScope.$broadcast("videoCollectionChanged",data)},$scope.getData()});
