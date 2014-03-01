@@ -1,6 +1,6 @@
 # vimeoExample
 
-A simple interaction with vimeo API using angularjs. (View the demo)[http://seripap.github.io/vimeoAngularExample/].
+A simple interaction with vimeo API using angularjs. [View the demo](http://seripap.github.io/vimeoAngularExample/).
 
 If dependencies are needed, run ``bower install``
 
